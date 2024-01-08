@@ -1,0 +1,583 @@
+/*------------------------------------------------body---------------------------------------*/
+body{
+	height: 0px;
+}
+/*---------------------------------------------body header-----------------------------------*/
+#body-header{
+	height: 65vh;
+	/*---------------------------------------Back ground img-----------------------------------*/
+	background-image: url('https://e0.pxfuel.com/wallpapers/387/82/desktop-wallpaper-engineering-engineering-minimalist.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*--------------------------------------Header Horizontal List---------------------------------*/
+.horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	text-decoration: none;
+}
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px;
+	color: white;
+	font-size: 25px;
+}
+.horizontal-list li a{
+	color: white;
+	text-decoration: none;
+	color: lightgrey;
+}
+.nav-header li a:hover{
+	text-decoration: underline 2px solid red;
+	transition: 0.4s ;
+
+}
+
+.text-center{
+	text-align: center;
+}
+
+.dropdown-bar{
+
+} 
+.text-right{
+	text-align: right;
+}
+
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*------------------------------------name-social-elements--------------------------------------*/
+#name-social-elements{
+	margin-top: 20vh;
+}
+
+.name{
+	color: white;
+	font-size: 4rem;
+	letter-spacing: 0.1rem;
+	font-weight: 700rem;
+	margin-bottom: 0.5rem;
+
+}
+.name{
+	color: white;
+	transition: color 0.4s ease;
+}
+
+
+
+.social-icon li a i{
+   padding: 10px;
+   border-radius: 50%;
+   color: white;
+}
+
+.social-icon li a i:hover{
+	box-shadow: 0px 0px 6px 4px;
+}
+
+/*--------------------------------------------Main--------------------------------------------*/
+
+/*-----------------------------------------Section Classes------------------------------------*/
+section{
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section:nth-child(2n){
+	background-color: lightgrey;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+
+.section-heading{
+  width: auto;
+  padding: 20px 10px 10px ;
+  font-weight: 400;	
+}
+
+.section-heading span{
+	font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/*--------------------------------------------------About--------------------------------------*/
+#about{
+	height: auto;
+   width: 100%;
+   margin-bottom: 50px;
+}
+
+#my-image{
+	height: 20rem;
+	width: 20rem;
+   margin: auto;
+   margin-top: -20vh;
+   
+}
+
+#my-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 4px solid white;
+	border-image: url('https://www.samys.com/images/product/main/S-008607x1000.jpg') 
+   30px round;
+/*   box-shadow: 5px 5px 3px 2px #8b8989;*/
+	
+}
+#my-image img:hover{
+	
+	box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 1.0);
+}
+#about>p{
+	margin-top: 35px;
+}
+
+/*--------------------------Education------------------------------------------*/
+#education{
+	width: 100%;
+	height: auto;
+}
+
+
+.time-section{
+	position: relative;
+	width: 90%;
+	margin-bottom: 70px;
+}
+.time-box{
+	position: relative;
+	margin: 5px;
+	width: 40%;
+	left: 5px;
+	min-height: 200px;
+
+}
+.time-box:nth-child(2n){
+	left: 58%;
+
+}
+.time-box-heading{
+	width: 100%;
+	color: #2857a4;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.time-box-sub-heading{
+	width: 100%;
+	color: #2857a4;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.time-box-details{
+	color: #6b2020;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.timeline-divider{
+	position: absolute;
+	height: 70%;
+	width: 0;
+	border: 3px dashed #828a906b;
+	top: 10%;
+	left: 50%;
+}
+
+.timeline-traveller{
+	position: sticky;
+	top: 30%;
+	transform: rotate(90deg);
+	z-index: 2;
+
+}
+.time-box:nth-child(2n) ::after{
+	content: '';
+	position:absolute ;
+	top: 40%;
+	left: -21%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+   border-radius: 50%;
+   z-index: 2;
+}
+
+.time-box:nth-child(2n+1) ::after{
+	content: '';
+	position:absolute ;
+	top: 40%;
+	right: -24%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+   border-radius: 50%;
+   z-index: 2;
+}
+
+
+
+
+
+
+/*-------------------------Skills----------------------------------------------*/
+#skills{
+	width: 100%;
+	height: auto;
+}
+/*#skills span{
+	box-shadow: 20px 20px 20px 1px #8b8b8b;
+}*/
+.bm75px{
+	margin-bottom: 75px;
+}
+
+.skills-display{
+	width:70%;
+	padding: 10px;
+	margin-bottom: 90px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.skill-progress{
+	width: 10rem;
+	height: 2rem;
+	background-color: lightgrey;
+	border-radius: 1rem;
+	box-shadow: 20px 20px 20px 1px  #8b8b8b ;
+	/* Horizontal offset (horizontal position), Vertical offset (vertical position), Blur radius(Optional. The blur distance)., Spread radius starts from after the 1px(Optional. The size of shadow)., Color */
+	margin: 40px;
+	overflow: hidden;
+/*	border: 2px solid black;*/
+}
+.skill-progress >div{
+	border-radius: 10px 0px 0px 10px;
+	box-shadow: 1px 1px 5px 2px #50503c;
+}
+.skill-name span {
+	color: white;
+	font-size: 1.2rem;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+/*-------------------------------Portfolio-------------------------------------------------*/
+#portfolio{
+	height: auto;
+}
+.portfolio-container{
+	width: 80%;
+	height: auto;
+/*	border: 2px solid black;*/
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	padding: 0 30px;
+	justify-content: space-around;
+}
+.portfolio-img{
+	max-width: 400px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.portfolio-img img{
+	 width: 100%;
+    height: 100%;
+ }
+ .portfolio-img  {
+ 	box-shadow: 20px 20px 20px 1px #8b8b8b;
+ }
+
+
+/*-------------------------contact----------------------------------*/
+#contact{
+	width: 100%;
+	height: auto;
+	background: linear-gradient(to top right, #1d1d95 30%, purple 70%);
+}
+
+.contact-heading{
+	width: auto;
+	font-weight: 400;
+	padding-top: 20px 10px 10px 10px;
+}
+.contact-heading  span{
+	font-size: 40px;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+	display: inline-block;
+	color: white;
+}
+
+.contact-container{
+	display: flex;
+	width:100% ;
+	height: auto;
+	margin-bottom: 20px;
+}
+.contact-form-container{
+	width: 50%;
+	height: 80%;
+}
+#contact-form{
+	margin-left: 20%;
+}
+#contact-form input, textarea{
+	max-width: 90%;
+	margin: 20px;
+	padding: 5px;
+	color: white;
+	border: 0px solid transparent;
+	border-bottom: 2px solid white;
+	background-color: transparent;
+	width: 90%;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+ 
+
+.my-details-container{
+	width: 35%;
+	margin-left: 6%;
+	color: white;
+	display: inline-block;	
+
+}
+.my-details-container h3{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.my-details-info{
+	margin-bottom:20px;
+}
+.my-details-info i{
+	margin-right: 5px;
+}
+
+.contact-container-social-med{
+	margin-top: 20px;
+	color: white;
+	width: 100%;
+	margin-bottom: 40px;
+
+}
+.contact-container-social-med li a i{
+   margin: 5px 20px 10px 0px;
+	padding: 5px;
+	color: white;
+	border-radius: 50%;
+}
+.contact-container-social-med li a i: hover{
+
+	box-shadow: 0px 0px 5px 4px;
+}
+
+
+
+
+
+
+
+
+/*------------------------Color-------------------------------*/
+.blue{
+	background-color: blue;
+}
+.black{
+	background-color: black;
+}
+.orange{
+	background-color: orange;
+}
+.green{
+	background-color: green;
+}
+.red{
+	background-color: red;
+}
+.pink{
+	background-color: hotpink;
+}
+.brown{
+	background-color: brown;
+}
+
+/*----------------------Precentage------------------------*/
+
+.eighty-per{
+	width: 80%;
+	height: inherit;
+}
+
+.eighty-per{
+	width: 80%;
+	height: inherit;
+}
+
+
+.seventyfive-per{
+	width: 75%;
+	height: inherit;
+}
+.seventy-per{
+	width: 70%;
+	height: inherit;
+}
+.sixty-per{
+	width: 55%;
+	height: inherit;
+}
+
+
+/*---------------------------Media Queries-----------------------------------------------*/
+@media screen and (max-width:700px){
+	#name-social-elements{
+		margin-top: 10rem;
+		margin-bottom: 20px;
+	}
+	#my-image{
+		height: 10rem;
+		width: 10rem;
+		margin-top: -5rem;
+	}
+
+	.name{
+		font-size: 3rem;
+	}	
+}
+
+
+@media screen and (max-width: 600px){
+	.name{
+		margin-top: 0px;
+		font-size: 2rem;
+	}
+
+	#my-image{
+		height: 10rem;
+		width: 10rem;
+		margin-top: -5rem;
+}	
+.bars {
+        display: block;
+    }
+    
+    
+    .nav-header {
+        display: none;
+    } 
+
+
+.timeline-divider{
+		left: 5%;
+}
+.time-box{
+   	left: 50% !important;
+}
+.time-box:nth-child(2n) ::after{
+		left: -116%;
+}
+.time-box:nth-child(2n+1) ::after{
+		left: -116%;
+
+}
+
+#contact-form{
+	margin-left: 0px;
+}
+.contact-form-container{
+	width: 80%;
+	margin: 10%;
+}
+.contact-container{
+	flex-wrap: wrap;
+}
+.my-details-container{
+	width: 80%;
+	margin: 10%;
+}
+
+}
+
+
